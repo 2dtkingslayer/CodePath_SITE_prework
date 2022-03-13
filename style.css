@@ -95,8 +95,10 @@ button {
 }
 
 #gameButtonArea {
-  
+  background-color: red;
 }
+
+
 
 /* Very light scaling for our illustration */
 .illustration {
