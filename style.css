@@ -10,27 +10,6 @@
   --font-family-header: "HK Grotesk";
 }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
 /* Our remix on glitch button */
 .btn--remix {
   font-family: inherit;
@@ -110,18 +89,13 @@ h1 {
   margin: 0;
 }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
+button {
+  padding: 10px;
+  border-radius: 10px;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+#gameButtonArea {
+  
 }
 
 /* Very light scaling for our illustration */
@@ -131,13 +105,7 @@ h1 {
   margin-top: var(--image-margin);
 }
 
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
-
 /* Button - Add it from the README instructions */
-button,
 input {
   font-family: inherit;
   font-size: 100%;
@@ -152,17 +120,4 @@ input {
 /* Subheading */
 h2 {
   color: #2800FF;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
 }
