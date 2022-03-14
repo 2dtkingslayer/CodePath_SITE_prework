@@ -94,12 +94,11 @@ button {
   border-radius: 10px;
 }
 
-#gameButtonArea {
-  background-color: red;
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
 }
-
-
-
 /* Very light scaling for our illustration */
 .illustration {
   max-width: 100%;
