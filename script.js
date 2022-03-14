@@ -11,3 +11,9 @@ function startGame(){
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
 }
+
+function stopGame(){
+  gamePlaying = false;
+  document.getElementById("startBtn").classList.remove("hidden");
+  document.getElementById("stopBtn").classList.add("hidden");
+}
