@@ -99,6 +99,23 @@ button {
   height:200px;
   margin:2px;
 }
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: lightgreen;
+}
+#button2 {
+  background: lightblue;
+}
+#button3 {
+  background: pink;
+}
+#button4 {
+  background: lightyellow;
+}
 /* Very light scaling for our illustration */
 .illustration {
   max-width: 100%;
