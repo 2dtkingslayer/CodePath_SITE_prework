@@ -103,18 +103,30 @@ button {
 .hidden {
   display: none;
 }
-
+/* Button setup */
 #button1 {
     background: lightgreen;
+}
+#button1:active {
+    background: green;
 }
 #button2 {
   background: lightblue;
 }
+#button2:active {
+    background: blue;
+}
 #button3 {
   background: pink;
 }
+#button3:active {
+    background: red;
+}
 #button4 {
   background: lightyellow;
+}
+#button4:active {
+    background: yellow;
 }
 /* Very light scaling for our illustration */
 .illustration {
