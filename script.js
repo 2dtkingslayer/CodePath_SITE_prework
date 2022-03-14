@@ -86,3 +86,12 @@ function playClueSequence(){
     delay += cluePauseTime;
   }
 }
+
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
