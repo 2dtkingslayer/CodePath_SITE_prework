@@ -58,10 +58,10 @@
           <button id="startBtn" onclick="startGame()">Start</button>
           <button class="hidden"  id="stopBtn" onclick="stopGame()">Stop</button>
           <div id="gameButtonArea">
-            <button id="button1">Button 1</button>
-            <button id="button2">Button 2</button>
-            <button id="button3">Button 3</button>
-            <button id="button4">Button 4</button>
+            <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()">Button 1</button>
+            <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()">Button 2</button>
+            <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()">Button 3</button>
+            <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()">Button 4</button>
           </div>
         </div>
       </div>
