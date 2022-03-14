@@ -87,9 +87,9 @@ function playClueSequence(){
   }
 }
 
-function loseGame(){
+function winGame(){
   stopGame();
-  alert("Game Over. You lost.");
+  alert("Game Over. You won!");
 }
 function loseGame(){
   stopGame();
