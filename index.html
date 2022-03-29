@@ -27,8 +27,10 @@
             <strong>Repeat</strong> the pattern back to win the game!
           </p>
           <!-- ADD BUTTON HERE -->
-          <button id="startBtn" onclick="startGame()">Start</button>
-          <button class="hidden"  id="stopBtn" onclick="stopGame()">Stop</button>
+          <div style="text-align:center;">
+            <button id="startBtn" onclick="startGame()">Start</button>
+            <button class="hidden"  id="stopBtn" onclick="stopGame()">Stop</button>
+          </div>
           <div id="gameButtonArea">
             <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">Button 1</button>
             <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">Button 2</button>

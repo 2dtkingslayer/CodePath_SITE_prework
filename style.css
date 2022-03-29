@@ -38,9 +38,12 @@ button {
 }
 
 #gameButtonArea > button {
-  width:200px;
-  height:200px;
-  margin:2px;
+  width: 250px;
+  height: 250px;
+  margin: 2px;
+}
+#gameButtonArea{
+  text-align: center;
 }
 
 /* Button setup */
@@ -74,13 +77,11 @@ button {
 }
 
 #startBtn {
-  margin-left: 280px;
   background: #fef7e5;
   font-size: 20px;
   font-weight: 700;
 }
 #stopBtn {
-  margin-left: 280px;
   background: #fef7e5;
   font-size: 20px;
   font-weight: 700;
