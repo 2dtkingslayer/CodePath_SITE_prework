@@ -34,12 +34,10 @@ function playTone(btn , len){
   g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025)
   context.resume()
   tonePlaying = true
-  setTimeout(function(){
-    stopTone()
-  },len)
+  setTimeout(function(){stopTone()},len) //will stopTone() after len (seconds)
 }
 function startTone(btn){
-  if(!tonePlaying){
+  if(tonePlaying == false){
     context.resume()
     o.frequency.value = freqMap[btn]
     g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025)
