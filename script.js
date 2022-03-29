@@ -95,3 +95,14 @@ function loseGame(){
   stopGame();
   alert("Game Over. You lost.");
 }
+
+function guess(btn){
+  console.log("user guessed: " + btn);
+  if (!gamePlaying){
+    return;
+  }
+  // add game logic here
+  else {
+    playSingleClue(btn);
+  }
+}
