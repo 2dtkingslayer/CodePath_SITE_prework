@@ -96,3 +96,14 @@ h2 {
   color: #dd5d18;
   font-family: Quicksand;
 }
+p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 25px;
+}
