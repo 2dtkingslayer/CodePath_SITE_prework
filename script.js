@@ -72,7 +72,7 @@ function playSingleClue(btn){
   if ( gamePlaying ){
     lightButton(btn);
     playTone(btn , clueHoldTime);
-    setTimeout(clearButton , clueHoldTime , btn);
+    setTimeout(clearButton , clueHoldTime , btn); //clearButton(btn) after clueHoldTime (seconds)
   }
 }
 function playClueSequence(){
