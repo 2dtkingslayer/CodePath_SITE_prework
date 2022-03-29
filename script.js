@@ -103,6 +103,7 @@ function guess(btn){
   }
   // add game logic here
   else {
-    playSingleClue(btn);
+    startTone(btn);
+    stopTone(btn);
   }
 }
