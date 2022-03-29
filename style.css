@@ -16,13 +16,14 @@ END Glitch hello-app default styles
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  background-color: slategrey;
+  background: linear-gradient(113.06deg, #F2E1C1 15.11%, rgba(246, 174, 153, 0.8) 88.91%);
   color: white; 
 }
 
 h1 {
-  font-family: verdana, arial, sans-serif;
-  color: navy;
+  text-align: center;
+  font-family: Quicksand;
+  color: #9a0000;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
@@ -90,5 +91,8 @@ input {
 
 /* Subheading */
 h2 {
-  color: #2800FF;
+  font-weight: 700;
+  text-align: center;
+  color: #dd5d18;
+  font-family: Quicksand;
 }
