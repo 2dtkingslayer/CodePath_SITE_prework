@@ -72,14 +72,14 @@ function playSingleClue(btn){
   if ( gamePlaying ){
     lightButton(btn);
     playTone(btn , clueHoldTime);
-    setTimeout(clearButton , clueHoldTime , btn); //clearButton(btn) after clueHoldTime (seconds)
+    setTimeout(clearButton , clueHoldTime , btn); //clearButton(btn) after clueHoldTime (mili-seconds)
   }
 }
 function playClueSequence(){
   guessCounter = 0;
   context.resume()
   let delay = nextClueWaitTime; // set delay to initial wait time
-  for(let i=0; i <= progress; i++){ // for each clue that is revealed so far
+  for(let i = 0; i <= progress; i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
     setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
     delay += clueHoldTime;
