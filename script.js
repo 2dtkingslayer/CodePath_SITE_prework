@@ -3,6 +3,7 @@ var clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
+
 //Global Variables
 var pattern = [];
 var progress = 0; 
@@ -10,13 +11,16 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 1;  //must be between 0.0 and 1.0
 var guessCounter = 0;
+var timer; // timer variable
+var timeGiven = 10; // time between guess and clues
+var timeRemaining = 0;
 
 function startGame(){
   for (let i = 0; i < 10; i++) pattern[i] = Math.floor(Math.random() * 13) + 1; // random different pattern each play
   progress = 0;
   clueHoldTime = 1000;
   gamePlaying = true;
-  // swap the Start and Stop buttons
+  // toggle the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   playClueSequence();
@@ -24,8 +28,10 @@ function startGame(){
 
 function stopGame(){
   gamePlaying = false;
+  // toggle the Stop and Start buttons
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
+  clearTimer();
 }
 
 // Sound Synthesis Functions
