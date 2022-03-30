@@ -4,7 +4,7 @@ const nextClueWaitTime = 1000; // how long to wait before starting playback of t
 const mistakesAllow = 3;
 
 //Global Variables
-var clueHoldTime = 1000; //how long to hold each clue's light/sound
+var clueHoldTime = 1000.0; //how long to hold each clue's light/sound
 var pattern = [1,2,3,4,5,6,7,8,9,10]; // i choose 10 indices for pattern array
 var progress = 0; 
 var gamePlaying = false;
@@ -20,13 +20,13 @@ function startGame(){
   for (let i = 0; i < 10; i++) pattern[i] = Math.floor(Math.random() * 13) + 1; // random different pattern each play from 1 to 13
   progress = 0;
   mistake = mistakesAllow;
-  clueHoldTime = 1000; // reset time every play
+  clueHoldTime = 1000.0; // reset time every play
   gamePlaying = true;
   // toggle the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
-  playClueSequence();
   document.getElementById("mistake").innerHTML = "Mistake remaining: " + mistakesAllow;
+  playClueSequence();
 }
 
 function stopGame(){
@@ -104,9 +104,9 @@ function playClueSequence(){
   timer = setTimeout(function tick() {
     if (gamePlaying) {
       updateTimer();
-      timer = setTimeout(tick, 1000); // delay * (progress+1) is the time for sequence thorugh each turn
+      timer = setTimeout(tick, 1000); // 1 second each tictac
     }
-  }, delay); // first delay after first clue
+  }, delay); //
 }
 
 function clearTimer() {
@@ -141,11 +141,13 @@ function guess(btn){
     if (guessCounter == progress){ // Last note of the current turn
       if (progress == pattern.length - 1){ // GAME OVER: WIN!
         winGame();
-      } else { // Not yet
+      } 
+      else { // Not yet
         progress++;
         playClueSequence();
       }
-    } else {
+    } 
+    else {
       guessCounter++; //so far so good... check the next guess
     }
   } 
