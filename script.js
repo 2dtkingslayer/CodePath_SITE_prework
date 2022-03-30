@@ -12,7 +12,7 @@ var volume = 1;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 
 function startGame(){
-  for (let i = 0; i < 13; i++) pattern[i] = Math.round(Math.random() * 13);
+  for (let i = 0; i < 13; i++) pattern[i] = Math.floor(Math.random() * 13) + 1;;
   progress = 0;
   gamePlaying = true;
   // swap the Start and Stop buttons
