@@ -50,7 +50,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 N/A
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+I met two difficulties in this project at first but actually, in my opinion, they are not extreme challenges. I am not getting use to integrating JavaScript file with HTML/CSS so the syntax took me a few more time to figure out. However, thanks to the detail instruction of the prework and a minor research on Google, I found it simple for me. I even use two more getElementbyID and innerHTML command lines to add the "Time remaining" line and the "Mistakes allowed" line. Furthermore, I met difficulty in setting the timer right after a sequence of clue was completely illustrated. Once again, I did a research about setTimeout() and the logical method after each step/button, I did it right.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
