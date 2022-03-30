@@ -4,7 +4,7 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 200; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [1, 1, 2, 1, 4, 3, 1, 1, 2, 1, 5, 4, 1, 1, 8, 6, 4, 3, 2, 13, 6, 4, 5, 4];
+var pattern = [1, 1, 2, 1, 4, 3, 1, 1, 2, 1, 5, 4, 1, 1, 8, 6, 4, 3, 2, 13, 13, 6, 4, 5, 4];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
@@ -101,7 +101,6 @@ function guess(btn){
   if (!gamePlaying){
     return;
   }
-  // add game logic here
   if (pattern[guessCounter] == btn){ // Guess was correct!
     if (guessCounter == progress){ // Last note of the current turn
       if (progress == pattern.length - 1){ // GAME OVER: WIN!
