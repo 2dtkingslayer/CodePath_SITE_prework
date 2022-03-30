@@ -141,8 +141,7 @@ function guess(btn){
         playClueSequence();
       }
     } else {
-      //so far so good... check the next guess
-      guessCounter++;
+      guessCounter++; //so far so good... check the next guess
     }
   } else { // Guess was incorrect
     loseGame(); // GAME OVER: LOSE!
