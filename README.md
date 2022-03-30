@@ -57,7 +57,8 @@ N/A
 Actually I learned about HTML/CSS before so I don't really have any question after my prework. However, I am a music guy and also planning a music app project, I raised some amazing questions like "How can I completely build a front-end for a keyboard?" (in my submission, I built an octave), "How can I connect the buttons with the computer's button?", "Is it allowed to play multiple notes a time?",... Obviously, I will then figure out all of these questions and upgrade this submission.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+I still have one uncomplete optional requirement (Game button sound is more complex than a single tone); therefore, I will try to figure it out if I have more time on this project. Specifically, I will learn how to import an audio file to JavaScript and display it on HTML. Furthermore, I will create database and save players' score to disk so it becomes a full-stack web application. Finally, I want to save the notes/sheet of many song I like so that I sister can learn to play piano with my web application.
 
 
 
