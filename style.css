@@ -166,18 +166,6 @@ button {
   display: none;
 }
 
-/* Button - Add it from the README instructions */
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
-
 /* Subheading */
 h2 {
   font-weight: 900;

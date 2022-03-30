@@ -27,8 +27,12 @@
             <button class="hidden"  id="stopBtn" onclick="stopGame()">Stop</button>
           </div>
           
-          <p id="time-remain">   </p>
-          <p id="mistake">          </p>
+          <div class="slidecontainer">
+            <img src="https://cdn.glitch.com/426e7d0a-f0e2-4207-8ff9-d34e4085a91f%2Fsound-off-icon-40944.png?v=1615183487030" style="width:20px;height:20px;">
+            <input id="volumeSlider" type="range" min="1" max="100" value="50" class="slider">
+          </div>
+          <p id="time-remain"></p>
+          <p id="mistake"></p>
           <br>
           <div id="gameBlackButtonArea">
             <button id="button9" onclick="guess(9)" onmousedown="startTone(9)" onmouseup="stopTone()">C#</button>

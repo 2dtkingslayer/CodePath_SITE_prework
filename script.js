@@ -4,7 +4,7 @@ const nextClueWaitTime = 1000; // how long to wait before starting playback of t
 const mistakesAllow = 3;
 
 //Global Variables
-var clueHoldTime = 1000.0; //how long to hold each clue's light/sound
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var pattern = [1,2,3,4,5,6,7,8,9,10]; // i choose 10 indices for pattern array
 var progress = 0; 
 var gamePlaying = false;
@@ -12,15 +12,15 @@ var tonePlaying = false;
 var volume = 1;  // between 0.0 and 1.0
 var guessCounter = 0;
 var timer; // timer variable
-var timeGiven = 10; // time between guess and clues
-var timeRemaining = 0; // no more time
+var timeGiven = 12; // time between guess and clues
+var timeRemain = 0; // no more time
 var mistake;
 
 function startGame(){
   for (let i = 0; i < 10; i++) pattern[i] = Math.floor(Math.random() * 13) + 1; // random different pattern each play from 1 to 13
   progress = 0;
   mistake = mistakesAllow;
-  clueHoldTime = 1000.0; // reset time every play
+  clueHoldTime = 1000; // reset time every play
   gamePlaying = true;
   // toggle the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
@@ -63,14 +63,14 @@ function stopTone(){
 
 // Page Initialization
 // Init Sound Synthesizer
-var AudioContext = window.AudioContext || window.webkitAudioContext 
-var context = new AudioContext()
-var o = context.createOscillator()
-var g = context.createGain()
-g.connect(context.destination)
-g.gain.setValueAtTime(0, context.currentTime)
-o.connect(g)
-o.start(0)
+var AudioContext = window.AudioContext || window.webkitAudioContext ;
+var context = new AudioContext() ;
+var o = context.createOscillator();
+var g = context.createGain();
+g.connect(context.destination);
+g.gain.setValueAtTime(0, context.currentTime);
+o.connect(g);
+o.start(0);
 
 function lightButton(btn){
   document.getElementById("button" + btn).classList.add("lit")
@@ -89,7 +89,7 @@ function playSingleClue(btn){
 function playClueSequence(){
   guessCounter = 0;
   clueHoldTime -= 60;
-  clearTimeout();
+  clearTimeout(timer);
   document.getElementById("time-remain").innerHTML = "Time remaining: " + timeGiven;
   context.resume()
   let delay = nextClueWaitTime; // set delay to initial wait time
@@ -100,7 +100,7 @@ function playClueSequence(){
     delay += cluePauseTime;
   }
   // set time
-  timeRemaining = timeGiven;
+  timeRemain = timeGiven;
   timer = setTimeout(function tick() {
     if (gamePlaying) {
       updateTimer();
@@ -111,13 +111,13 @@ function playClueSequence(){
 
 function clearTimer() {
   clearTimeout(timer);
-  timeRemaining = 0;
+  timeRemain = 0;
   document.getElementById("time-remain").innerHTML = "";
 }
 function updateTimer() {
-    if (timeRemaining > 0) {
-      document.getElementById("time-remain").innerHTML = "Time remaining: " + timeRemaining;
-      timeRemaining--;
+    if (timeRemain > 0) {
+      document.getElementById("time-remain").innerHTML = "Time remaining: " + timeRemain;
+      timeRemain--;
     } else {
       loseGame();
     }
