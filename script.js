@@ -1,10 +1,10 @@
 // global constants
-var clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; // how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [1,2,3,4,5,6,7,8,9,10];
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
+var pattern = [1,2,3,4,5,6,7,8,9,10]; // i choose 10 indices for pattern array
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
@@ -12,12 +12,12 @@ var volume = 1;  // between 0.0 and 1.0
 var guessCounter = 0;
 var timer; // timer variable
 var timeGiven = 10; // time between guess and clues
-var timeRemaining = 0;
+var timeRemaining = 0; // no more time
 
 function startGame(){
-  for (let i = 0; i < 10; i++) pattern[i] = Math.floor(Math.random() * 13) + 1; // random different pattern each play
+  for (let i = 0; i < 10; i++) pattern[i] = Math.floor(Math.random() * 13) + 1; // random different pattern each play from 1 to 13
   progress = 0;
-  clueHoldTime = 1000;
+  clueHoldTime = 1000; // reset time every play
   gamePlaying = true;
   // toggle the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
@@ -83,7 +83,7 @@ function playSingleClue(btn){
 }
 function playClueSequence(){
   guessCounter = 0;
-  clueHoldTime *= 0.9;
+  clueHoldTime -= 60;
   clearTimeout();
   document.getElementById("time-remain").innerHTML = "Time remaining: " + timeGiven;
   context.resume()
