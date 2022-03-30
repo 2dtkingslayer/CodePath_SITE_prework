@@ -1,7 +1,7 @@
 // global constants
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
-const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+const nextClueWaitTime = 1000; // how long to wait before starting playback of the clue sequence
 
 //Global Variables
 var pattern = [1,2,3,4,5,6,7,8,9,10];
@@ -40,7 +40,7 @@ function playTone(btn , len){
   g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025)
   context.resume()
   tonePlaying = true
-  setTimeout(function(){stopTone()},len) //will stopTone() after len (seconds)
+  setTimeout(function(){stopTone()},len) // will stopTone() after len (seconds)
 }
 function startTone(btn){
   if(tonePlaying == false){
@@ -88,7 +88,7 @@ function playClueSequence(){
   document.getElementById("time-remain").innerHTML = "Time remaining: " + timeGiven;
   context.resume()
   let delay = nextClueWaitTime; // set delay to initial wait time
-  for(let i = 0; i <= progress; i++){ // for each clue that is revealed so far
+  for (let i = 0; i <= progress; i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
     setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
     delay += clueHoldTime;
@@ -99,17 +99,18 @@ function playClueSequence(){
   timer = setTimeout(function tick() {
     if (gamePlaying) {
       updateTimer();
-      timer = setTimeout(tick, 1000); // (*)
+      timer = setTimeout(tick, delay * (progress+1)); // delay * (progress+1) is the time for sequence thorugh each turn
     }
-  }, delay);
+  }, delay); // first delay after first clue
 }
+
 function clearTimer() {
   clearTimeout(timer);
   timeRemaining = 0;
   document.getElementById("time-remain").innerHTML = "";
 }
 function updateTimer() {
-    if (timeRemaining >= 0) {
+    if (timeRemaining > 0) {
       document.getElementById("time-remain").innerHTML = "Time remaining: " + timeRemaining;
       timeRemaining--;
     } else {
