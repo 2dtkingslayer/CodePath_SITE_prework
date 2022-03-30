@@ -32,15 +32,14 @@ h1 {
 }
 
 button {
-  padding: 10px;
   border-radius: 10px;
   
 }
 
 #gameButtonArea > button {
-  width: 100px;
+  width: 35px;
   height: 100px;
-  margin: 2px;
+
 }
 #gameButtonArea{
   text-align: center;
@@ -48,43 +47,73 @@ button {
 
 /* Button setup */
 #button1 {
-  background: #FCFBEA;
+  background: #FFFEF3;
   border-radius: 5%;
 }
 #button1:active, #button1.lit {
     background: white;
 }
 #button2 {
-  background: #FCFBEA;
+  background: #FFFEF3;
   border-radius: 5%;
 }
 #button2:active, #button2.lit {
     background: white;
 }
 #button3 {
-  background: #FCFBEA;
+  background: #FFFEF3;
   border-radius: 5%;
 }
 #button3:active, #button3.lit {
     background: white;
 }
 #button4 {
-  background: lightyellow;
+  background: #FFFEF3;
   border-radius: 5%;
 }
 #button4:active, #button4.lit {
-    background: yellow;
+    background: white;
+}
+#button5 {
+  background: #FFFEF3;
+  border-radius: 5%;
+}
+#button5:active, #button5.lit {
+    background: white;
+}
+#button6 {
+  background: #FFFEF3;
+  border-radius: 5%;
+}
+#button6:active, #button6.lit {
+    background: white;
+}
+#button7 {
+  background: #FFFEF3;
+  border-radius: 5%;
+}
+#button7:active, #button7.lit {
+    background: white;
+}
+#button8 {
+  background: #FFFEF3;
+  border-radius: 5%;
+}
+#button8:active, #button8.lit {
+    background: white;
 }
 
 #startBtn {
   background: #fef7e5;
   font-size: 20px;
   font-weight: 700;
+  padding: 10px;
 }
 #stopBtn {
   background: #fef7e5;
   font-size: 20px;
   font-weight: 700;
+  padding: 10px;
 }
 .hidden {
   display: none;
