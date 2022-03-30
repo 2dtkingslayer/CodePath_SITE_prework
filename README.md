@@ -42,7 +42,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 <img src="https://i.imgur.com/YRMx54Q.gif">
 <img src="https://i.imgur.com/JSujIrr.gif">
 <img src="https://i.imgur.com/RQIDwYP.gif">
-![](gif4-link-here)
+<img src="https://i.imgur.com/cBbtj7E.gif">
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
