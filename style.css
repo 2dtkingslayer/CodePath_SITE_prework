@@ -180,14 +180,15 @@ input {
 
 /* Subheading */
 h2 {
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 34px;
   text-align: center;
   color: #dd5d18;
   font-family: Quicksand;
 }
 p {
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 22px;
 }
 img {
   width: 50%;
@@ -199,5 +200,5 @@ img {
 
 #time-remain {
   text-align: center;
-  
+  font-size: 22px;
 }

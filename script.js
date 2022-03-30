@@ -99,7 +99,7 @@ function playClueSequence(){
   timer = setTimeout(function tick() {
     if (gamePlaying) {
       updateTimer();
-      timer = setTimeout(tick, delay * (progress+1)); // delay * (progress+1) is the time for sequence thorugh each turn
+      timer = setTimeout(tick, 1000); // delay * (progress+1) is the time for sequence thorugh each turn
     }
   }, delay); // first delay after first clue
 }
