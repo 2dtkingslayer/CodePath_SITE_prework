@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 <img src="https://i.imgur.com/YRMx54Q.gif">
-![](gif2-link-here)
+<img src="https://i.imgur.com/JSujIrr.gif">
 ![](gif3-link-here)
 ![](gif4-link-here)
 
