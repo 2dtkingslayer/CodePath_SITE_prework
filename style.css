@@ -52,7 +52,7 @@ button {
   text-align: center;
 }
 #button9 {
-  background: #000000;
+  background: url('https://images.saatchiart.com/saatchi/56777/art/2690449/1760342-HSC00001-7.jpg');
   color: white;
   border-radius: 5%;
 }
@@ -60,7 +60,7 @@ button {
     background: #82827C;
 }
 #button10 {
-  background: #000000;
+  background: url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
   color: white;
   border-radius: 5%;
 }
@@ -68,7 +68,7 @@ button {
     background: #82827C;
 }
 #button11 {
-  background: #000000;
+  background: url('https://fsb.zobj.net/crop.php?r=G41m4RWjYoO1daAo_deNWNVouBosuU_4DoQ218hFDB6t6kFy24R-U4SFb7w9old1WI17TNs_Pa4drEV9BGQ2r4YpNM-4h2mmmcI--Mst4qUUaVRF6y7gvlnebORC4qmpkCU1_7Dpn7_FDKSoRIB1UT8uJiVNRTTjvirWZXcK4MkcwwJhwelXB8cX_UOOmuJ-lHklJgsntq711R1s');
   color: white;
   border-radius: 5%;
 }
@@ -94,14 +94,14 @@ button {
 
 /* Button setup */
 #button1 {
-  background: #F3F352;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjuu3c1nANYj7PUylnlKfiKS0YhIQZcL07w&usqp=CAU');
   border-radius: 5%;
 }
 #button1:active, #button1.lit {
     background: white;
 }
 #button2 {
-  background: #F3F352;
+  background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png');
   border-radius: 5%;
 }
 #button2:active, #button2.lit {
@@ -115,7 +115,7 @@ button {
     background: white;
 }
 #button4 {
-  background: #F3F352;
+  background: url('https://imgv3.fotor.com/images/gallery/feature-background-gallery-marble-ink-2.jpg');
   border-radius: 5%;
 }
 #button4:active, #button4.lit {
@@ -129,7 +129,7 @@ button {
     background: white;
 }
 #button6 {
-  background: #F3F352;
+  background: url('https://www.teahub.io/photos/full/112-1121814_galaxy-background-best-galaxy-background-design.jpg');
   border-radius: 5%;
 }
 #button6:active, #button6.lit {
@@ -143,7 +143,7 @@ button {
     background: white;
 }
 #button8 {
-  background: #F3F352;
+  background: url('https://imgv3.fotor.com/images/gallery/feature-background-gallery-marble-ink-1.jpg');
   border-radius: 5%;
 }
 #button8:active, #button8.lit {
