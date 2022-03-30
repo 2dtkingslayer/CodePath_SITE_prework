@@ -39,10 +39,57 @@ button {
 #gameButtonArea > button {
   width: 35px;
   height: 100px;
-
 }
 #gameButtonArea{
   text-align: center;
+}
+
+#gameBlackButtonArea > button {
+  width: 35px;
+  height: 80px;
+}
+#gameBlackButtonArea{
+  text-align: center-10px;
+}
+#button9 {
+  background: #000000;
+  color: white;
+  border-radius: 5%;
+}
+#button9:active, #button9.lit {
+    background: #82827C;
+}
+#button10 {
+  background: #000000;
+  color: white;
+  border-radius: 5%;
+}
+#button10:active, #button10.lit {
+    background: #82827C;
+}
+#button11 {
+  background: #000000;
+  color: white;
+  border-radius: 5%;
+}
+#button11:active, #button11.lit {
+    background: #82827C;
+}
+#button12 {
+  background: #000000;
+  color: white;
+  border-radius: 5%;
+}
+#button12:active, #button12.lit {
+    background: #82827C;
+}
+#button13 {
+  background: #000000;
+  color: white;
+  border-radius: 5%;
+}
+#button13:active, #button13.lit {
+    background: #82827C;
 }
 
 /* Button setup */

@@ -28,7 +28,7 @@ function stopGame(){
 }
 
 // Sound Synthesis Functions
-const freqMap = {1: 261.626, 2: 294.33, 3: 327.03, 4: 348.83, 5: 392.44, 6: 436.04, 7: 490.55, 8: 523.25}
+const freqMap = {1: 261.626, 2: 294.33, 3: 327.03, 4: 348.83, 5: 392.44, 6: 436.04, 7: 490.55, 8: 523.25, 9: 277.18, 10: 311.13, 11: 369.994, 12: 415.30, 13: 466.16}
 function playTone(btn , len){
   o.frequency.value = freqMap[btn]
   g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025)
