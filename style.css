@@ -49,7 +49,7 @@ button {
   height: 80px;
 }
 #gameBlackButtonArea{
-  text-align: center-10px;
+  text-align: center;
 }
 #button9 {
   background: #000000;
@@ -94,56 +94,56 @@ button {
 
 /* Button setup */
 #button1 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button1:active, #button1.lit {
     background: white;
 }
 #button2 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button2:active, #button2.lit {
     background: white;
 }
 #button3 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button3:active, #button3.lit {
     background: white;
 }
 #button4 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button4:active, #button4.lit {
     background: white;
 }
 #button5 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button5:active, #button5.lit {
     background: white;
 }
 #button6 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button6:active, #button6.lit {
     background: white;
 }
 #button7 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button7:active, #button7.lit {
     background: white;
 }
 #button8 {
-  background: #FFFEF3;
+  background: #F3F352;
   border-radius: 5%;
 }
 #button8:active, #button8.lit {
