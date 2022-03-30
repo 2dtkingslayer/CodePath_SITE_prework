@@ -15,7 +15,7 @@
     <div class="wrapper">
       <div class="content" role="main">
         <h1 class="title">2DT's Game</h1>
-        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/181620798_2935611970046250_6749619186571502043_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=174925&_nc_ohc=Sd4Amsc54QoAX94awCH&tn=SSefe-n8rpwtxTwU&_nc_ht=scontent-lga3-1.xx&oh=00_AT9W5aih-eunJ2-X4oDKozuYB_mUqOB4LbApQMEjDB7NeQ&oe=6247B8FC"/>
+        <img class="ava" src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/181620798_2935611970046250_6749619186571502043_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=174925&_nc_ohc=Sd4Amsc54QoAX94awCH&tn=SSefe-n8rpwtxTwU&_nc_ht=scontent-lga3-1.xx&oh=00_AT9W5aih-eunJ2-X4oDKozuYB_mUqOB4LbApQMEjDB7NeQ&oe=6247B8FC"/>
         <div>
           <h2>It's time to play the game!</h2>
           <p style="text-align:center;">
@@ -26,10 +26,10 @@
             <button id="startBtn" onclick="startGame()">Start</button>
             <button class="hidden"  id="stopBtn" onclick="stopGame()">Stop</button>
           </div>
-          
-          <div class="slidecontainer">
+          <br>
+          <div style="text-align:center;">
             <img src="https://cdn.glitch.com/426e7d0a-f0e2-4207-8ff9-d34e4085a91f%2Fsound-off-icon-40944.png?v=1615183487030" style="width:20px;height:20px;">
-            <input id="volumeSlider" type="range" min="1" max="100" value="50" class="slider">
+            <input id="volume-change" type="range" min="1" max="100" value="50" class="slider">
           </div>
           <p id="time-remain"></p>
           <p id="mistake"></p>

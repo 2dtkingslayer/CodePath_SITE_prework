@@ -55,6 +55,9 @@ function startTone(btn){
     context.resume()
     tonePlaying = true
   }
+  document.getElementById("volume-change").addEventListener("change", function() {
+    volume = document.getElementById("volume-change").value / 100.0;
+  }, false)
 }
 function stopTone(){
   g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025)
