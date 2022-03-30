@@ -1,6 +1,7 @@
 // global constants
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; // how long to wait before starting playback of the clue sequence
+const mistakesAllow = 3;
 
 //Global Variables
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
@@ -13,16 +14,19 @@ var guessCounter = 0;
 var timer; // timer variable
 var timeGiven = 10; // time between guess and clues
 var timeRemaining = 0; // no more time
+var mistake;
 
 function startGame(){
   for (let i = 0; i < 10; i++) pattern[i] = Math.floor(Math.random() * 13) + 1; // random different pattern each play from 1 to 13
   progress = 0;
+  mistake = mistakesAllow;
   clueHoldTime = 1000; // reset time every play
   gamePlaying = true;
   // toggle the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   playClueSequence();
+  document.getElementById("mistake").innerHTML = "Mistake remaining: " + mistakesAllow;
 }
 
 function stopGame(){
@@ -30,6 +34,7 @@ function stopGame(){
   // toggle the Stop and Start buttons
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
+  document.getElementById("mistake").innerHTML = "";
   clearTimer();
 }
 
@@ -143,7 +148,13 @@ function guess(btn){
     } else {
       guessCounter++; //so far so good... check the next guess
     }
-  } else { // Guess was incorrect
-    loseGame(); // GAME OVER: LOSE!
+  } 
+  else { // Guess was incorrect
+    mistake -= 1;
+    if (mistake == 0) loseGame();
+    else {
+      alert("Wrong note! You have " + mistake + " mistakes allowed left.");
+      document.getElementById("mistake").innerHTML = "Mistake remaining: " + mistake;
+    }
   }
 }

@@ -202,3 +202,9 @@ img {
   text-align: center;
   font-size: 22px;
 }
+
+#mistake {
+  text-align: center;
+  font-size: 22px;
+  color: red;
+}
