@@ -1,15 +1,14 @@
 // global constants
-var clueHoldTime = 1000.0; //how long to hold each clue's light/sound
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
-
 //Global Variables
-var pattern = [];
+var pattern = [1,2,3,4,5,6,7,8,9,10];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
-var volume = 1;  //must be between 0.0 and 1.0
+var volume = 1;  // between 0.0 and 1.0
 var guessCounter = 0;
 var timer; // timer variable
 var timeGiven = 10; // time between guess and clues
@@ -85,8 +84,8 @@ function playSingleClue(btn){
 function playClueSequence(){
   guessCounter = 0;
   clueHoldTime *= 0.9;
-  clearTimeout(timer);
-  document.getElementById("p2").innerHTML = "Time remaining: " + timeGiven;
+  clearTimeout();
+  document.getElementById("time-remain").innerHTML = "Time remaining: " + timeGiven;
   context.resume()
   let delay = nextClueWaitTime; // set delay to initial wait time
   for(let i = 0; i <= progress; i++){ // for each clue that is revealed so far
@@ -107,11 +106,11 @@ function playClueSequence(){
 function clearTimer() {
   clearTimeout(timer);
   timeRemaining = 0;
-  document.getElementById("p2").innerHTML = "";
+  document.getElementById("time-remain").innerHTML = "";
 }
 function updateTimer() {
     if (timeRemaining >= 0) {
-      document.getElementById("p2").innerHTML = "Time remaining: " + timeRemaining;
+      document.getElementById("time-remain").innerHTML = "Time remaining: " + timeRemaining;
       timeRemaining--;
     } else {
       loseGame();

@@ -196,3 +196,8 @@ img {
   display: block;
   border-radius: 30px;
 }
+
+#time-remain {
+  text-align: center;
+  
+}
