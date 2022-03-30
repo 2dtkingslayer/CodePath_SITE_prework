@@ -1,10 +1,10 @@
 // global constants
-const clueHoldTime = 500; //how long to hold each clue's light/sound
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
-const nextClueWaitTime = 200; //how long to wait before starting playback of the clue sequence
+const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [1, 1, 2, 1, 4, 3, 1, 1, 2, 1, 5, 4, 1, 1, 8, 6, 4, 3, 2, 13, 13, 6, 4, 5, 4];
+var pattern = [];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
@@ -12,7 +12,7 @@ var volume = 1;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 
 function startGame(){
-  //initialize game variables
+  for (let i = 0; i < 13; i++) pattern[i] = Math.round(Math.random() * 13);
   progress = 0;
   gamePlaying = true;
   // swap the Start and Stop buttons
