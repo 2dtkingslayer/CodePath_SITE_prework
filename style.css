@@ -38,8 +38,8 @@ button {
 }
 
 #gameButtonArea > button {
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   margin: 2px;
 }
 #gameButtonArea{
@@ -48,29 +48,29 @@ button {
 
 /* Button setup */
 #button1 {
-    background: lightgreen;
-  border-radius: 50%;
+  background: #FCFBEA;
+  border-radius: 5%;
 }
 #button1:active, #button1.lit {
-    background: green;
+    background: white;
 }
 #button2 {
-  background: lightblue;
-  border-radius: 50%;
+  background: #FCFBEA;
+  border-radius: 5%;
 }
 #button2:active, #button2.lit {
-    background: blue;
+    background: white;
 }
 #button3 {
-  background: pink;
-  border-radius: 50%;
+  background: #FCFBEA;
+  border-radius: 5%;
 }
 #button3:active, #button3.lit {
-    background: red;
+    background: white;
 }
 #button4 {
   background: lightyellow;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 #button4:active, #button4.lit {
     background: yellow;
